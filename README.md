@@ -16,3 +16,7 @@ Email: Carlos9661@hotmail.com
 Duvan Humberto Diaz Contreras
 CC : 1118564418
 Email : dudicodiaz@gmail.com
+
+Juan Sebastian Diaz Gutierrez
+CC: 1075293490
+Email: jsdiazg1@gmail.com

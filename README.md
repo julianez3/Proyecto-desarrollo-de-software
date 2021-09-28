@@ -16,3 +16,7 @@ Email: Carlos9661@hotmail.com
 Duvan Humberto Diaz Contreras
 CC : 1118564418
 Email : dudicodiaz@gmail.com
+
+Jhon Nicolay Mejia
+cc : 1094927817
+email : jnm6792@gmail.com

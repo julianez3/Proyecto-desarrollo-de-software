@@ -9,46 +9,50 @@
     </li>
     <li class="nav-item" role="presentation">
         <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
-            role="tab" aria-controls="contact" aria-selected="false">Actualizar Estado</button>
+            role="tab" aria-controls="contact" aria-selected="false">Actualizar/Modificar Ventas</button>
     </li>
 </ul>
 <div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><H3>Ventas</H3>
-        <table class="table">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <H3>Ventas</H3>
+        <table class="table text-center table-sm">
             <thead>
-              <tr>
-                <th scope="col">Identificador Venta</th>
-                <th scope="col">Producto</th>
-                <th scope="col">Precio Unitario</th>
-                <th scope="col">Cantidad</th>
-                <th scope="col">Valor Total Venta</th>
-                <th scope="col">Fecha Venta</th>
-                <th scope="col">Nombre Cliente</th>
-                <th scope="col">Documento Identificacion Cliente</th>
-              </tr>
+                <tr>
+                    <th scope="col">Identificador Venta</th>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Precio Unitario</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Valor Total Venta</th>
+                    <th scope="col">Fecha Venta</th>
+                    <th scope="col">Nombre Cliente</th>
+                    <th scope="col">Documento Identificacion Cliente</th>
+                    <th scope="col">Editar</th>
+                </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Jabon</td>
-                <td>1500</td>
-                <td>2</td>
-                <td>3000</td>
-                <td>15-09-2021</td>
-                <td>Camila Gomez</td>
-                <td>55112233</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Shampoo</td>
-                <td>7800</td>
-                <td>1</td>
-                <td>7800</td>
-                <td>16-09-2021</td>
-                <td>Juan Diaz</td>
-                <td>11111111</td>
-              </tr>
-              <th scope="row">3</th>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Jabon</td>
+                    <td>1500</td>
+                    <td>2</td>
+                    <td>3000</td>
+                    <td>15-09-2021</td>
+                    <td>Camila Gomez</td>
+                    <td>55112233</td>
+                    <td><i class="fas fa-edit"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Shampoo</td>
+                    <td>7800</td>
+                    <td>1</td>
+                    <td>7800</td>
+                    <td>16-09-2021</td>
+                    <td>Juan Diaz</td>
+                    <td>11111111</td>
+                    <td><i class="fas fa-edit"></i></td>
+                </tr>
+                <th scope="row">3</th>
                 <td>Cuaderno cuadriculado</td>
                 <td>10000</td>
                 <td>4</td>
@@ -56,27 +60,85 @@
                 <td>16-09-2021</td>
                 <td>Sergio Rodriguez</td>
                 <td>56899985</td>
-              <tr>
-                
+                <td><i class="fas fa-edit"></i></td>
+                <tr>
+
             </tbody>
-          </table>
+        </table>
 
     </div>
     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
         <form action="../../form-result.php" method="post" target="_blank">
 
             <p>
-          
-              Buscar una venta: <input type="search" name="busquedacodigo" size="4" maxlength="4">
-          
-              <input type="submit" value="Buscar">
-          
+
+                Buscar una venta: <input type="search" name="busquedacodigo" size="4" maxlength="4">
+
+                <input type="submit" value="Buscar">
+
             </p>
-          
-          </form>
+
+        </form>
 
     </div>
     <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-        
+        <div class="card">
+            <div class="card-header">Editar ventas</div>
+            <div class="card-body">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Identificador Venta</span>
+                    <input type="text" class="form-control" readonly disable value="1" aria-label="Identificador Venta"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Producto</span>
+                    <input type="text" class="form-control" placeholder="Jabon" aria-label="Producto"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Precio Unitario</span>
+                    <input type="text" class="form-control" placeholder="1500" aria-label="Precio Unitario"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Cantidad</span>
+                    <input type="text" class="form-control" placeholder="2" aria-label="Cantidad"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Valor Total Venta</span>
+                    <input type="text" class="form-control" placeholder="3000" aria-label="Valor Total Venta"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Fecha Venta</span>
+                    <input type="text" class="form-control" placeholder="15-09-2021" aria-label="Fecha Venta"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Nombre Cliente</span>
+                    <input type="text" class="form-control" placeholder="Camila Gomez" aria-label="Nombre Cliente"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Documento Identificacion</span>
+                    <input type="text" class="form-control" placeholder="55112233"
+                        aria-label="Documento Identificacion Cliente" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Estado Venta</span>
+                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                        <option selected></option>
+                        <option value="1">En proceso</option>
+                        <option value="2">Entregada</option>
+                        <option value="3">Cancelada</option>
+                    </select>
+                </div>
+
+
+
+
+            </div>
+        </div>
     </div>
 </div>
